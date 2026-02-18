@@ -225,9 +225,280 @@
 
 // -------------------------------------------pattern print---------------------------
 
-for(i=1;i<=8;i++){
-for(j=1;j<=i;j++){
-    document.write("*");
-}
-document.write("<br>");
-}
+// for(i=1;i<=8;i++){
+// for(j=1;j<=i;j++){
+//     document.write("*");
+// }
+// document.write("<br>");
+// }
+
+// ---------------------------Question 1-50------------------
+
+// que 1
+// let myName = "nitin"
+// console.log(myName);
+
+// q2
+// let age;
+// age = 25;
+// console.log(age)
+
+// q3
+// const country = "india";
+// console.log(country)
+
+// q4
+// let value = 25;
+// console.log(value)
+// value = 26;
+// console.log(value)
+
+// q5
+// const a = 2;
+// console.log(a)
+// a = 3;
+// console.log(a)
+// Uncaught TypeError: Assignment to constant variable.
+
+// q6
+// let name = "string"
+// let num= 22;
+// let value = true;
+// let a ;
+// console.log(typeof a);
+// let b= null;
+// console.log(b);
+
+// q7
+// let str = "hi"
+// console.log(typeof str);
+
+// q8
+// let a=25;
+// console.log(typeof a);
+
+// // q9
+// let boo=true;
+// console.log(typeof boo);
+
+// // q10
+// let nu= null;
+// console.log(typeof nu)
+
+// q11 to 15
+// let naam = "hello"
+// console.log(typeof "hello")
+// console.log(typeof 100)
+// console.log(typeof true)
+// console.log(typeof undefined)
+// console.log(typeof null)
+
+// q16 to 25
+// console.log(10+5);//15
+// console.log(10-5);//5
+// console.log(10*5);//50
+// console.log(10/2);//5
+// console.log(10%3);//1
+// console.log(5=="5");//true
+// console.log(5==="5");//false
+// console.log(10>5);//true
+// console.log(10<5);//false
+// console.log(true&&false)//false
+
+// q26 --number is even or odd
+// let num = prompt("enter any number")
+// if(num%2===0){
+//     console.log("even")
+// }else if(num%2!==0){
+//     console.log("odd")
+// }
+
+// q27--adult minor
+// let age = prompt("enter age")
+// let result = age>=18 ? "adult":"minor";
+// console.log(result);
+
+// q28--positive or negative
+// let num = -10;
+// if(num>=0){
+//     console.log("positive");
+// }
+// else if(num<0){
+//     console.log("negative")
+// }
+
+// q29 largest of 2num
+// let a = 21; 
+// let b = 21; 
+// if(a>b){
+//     console.log("a is greater")
+// }else if(a==b ){
+//     console.log("equal number")
+// }else{
+//     console.log("b is greater")
+// }
+
+//q30 largest of 3num
+// let a = 21; 
+// let b = 2;
+// let c = 20;
+// if(a>b && a>c){
+//     console.log("a is greater")
+// }else if(b>a && b>c ){
+//     console.log("b is greater")
+// }else if(c>a && c>b){
+//     console.log("c is greater")
+// }
+
+//q31 - num is zero
+// let num = 0;
+// if (num === 0){
+// console.log("num is zero")
+// }else{
+//     console.log(num)
+// }
+
+// q32 -- grade system
+// let number = 79;
+// let grade;
+// if(number>=90 && number<=100){
+//     console.log(grade="A")
+// }else if (number>=80 && number<90){
+//     console.log(grade= "B")
+// }
+// else if (number>=70 && number<80){
+//    console.log(grade= "C")
+// }
+// else if (number<70){
+//     console.log(grade= "Fail")
+// }
+
+// q33--num d by 5
+// let num = 120;
+// if(num%5===0){
+//     console.log("number is divisible by 5")
+// }else{
+//     console.log("not divisible by 5")
+// }
+
+// q34-- d by 3-5
+// let num = 33;
+// if(num%5===0){
+//     console.log("divisible by 5");
+// }else if(num%3===0){
+//     console.log("divisible by 3");
+// }else if(num%5===0 && num%3===0){
+//     console.log("num is divisible by both 3 and 5")
+// }else{
+//     console.log("not divsible by 3 and 5 ")
+// }
+
+// q35 -- leap year
+
+
+
+
+
+
+// --------------------------ternary operator---------------------
+
+// q36 adult minor
+// let age = 18;
+// let result = age>=18 ? "adult" : "minor";
+// console.log(result);
+
+// q37 pass fail
+// let num = 32;
+// let result = num>=40 ? "pass": "fail";
+// console.log(result);
+
+//q38-- even odd
+// let num = 1;
+// let result = num%2===0 ? "even":"odd";
+// console.log(result);
+
+// q39 +ive = -tive
+// let num = -10;
+// let result = num>=0 ? "positive" : "negative";
+// console.log(result);
+
+// q40 greater of 2 num
+// let a = 1;
+// let b = 0;
+// let result = a>b ?"greater is a":"b is greater";
+// console.log(result);
+
+// ---------------------------loops--------------------
+
+// q41--- num 1 to 10
+// for (i=1;i<=10;i++){
+//     console.log(i);
+// }
+
+// q42---10 to 1
+// for (i=10;i>=1;i--){
+//     console.log(i);
+// }
+
+
+// q43 even
+// for (i=1; i<=20;i++){
+//     if(i%2===0){
+//         console.log(i , "even")
+//     }
+    
+// }
+
+// q44 odd
+// for (i=1; i<=20;i++){
+//     if(i%2!==0){
+//         console.log(i, "odd")
+//     }
+    
+// }
+
+// 45-- multip of 5
+// let table = 5;
+// for(i=1;i<=10;i++){
+//     console.log("5 * ",i , "=" ,table*i);
+// }
+
+// q47
+// let num = 1;
+// while(num<=10){
+//     console.log(num);
+//     num++;
+// }
+
+// 46
+// let sum = 0;
+// for(i=1;i<=10;i++){
+//     sum+=i;
+
+// }
+// console.log(sum);
+
+
+// 48
+// let temp = `
+// *
+// **
+// *
+// **
+// ***
+// `
+// console.log(temp);
+
+// q49
+// for(i=1;i<=100;i++){
+//     if(i%5===0){
+//         // console.log("divisible by 5");
+//         console.log(i);
+//     }
+// }
+
+// 50
+// for(i=50;i>=1;i--){
+//     console.log(i)
+// }
+
