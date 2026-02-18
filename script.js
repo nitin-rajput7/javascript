@@ -394,11 +394,17 @@
 // }
 
 // q35 -- leap year
+let year = 2020;
+if((year%4===0 && year%100 !==0) || (year%400===0)){
+    console.log(year+"this is a leap year");
+}
+
+else{
+    console.log(year+"not a leap year");
+}
 
 
-
-
-
+// no % 400===0 || (no %4===0 && no%100 !==0)
 
 // --------------------------ternary operator---------------------
 
