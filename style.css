@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+.displayflexFull{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+/* ----------print number---------- */
+section{
+    width: 400px;
+    height: 200px;
+    margin: 18px;
+    border: 1px solid black;
+}
+section>div{
+    height: 100%;
+}
+
+p{
+    border: 1px solid black;
+    height: 20px;
+    width: 90%;
+    overflow: hidden;
+    /* padding: 8px 12px; */
+}
+.printnumber #userNum{
+    width: auto;
+    height: 5vh;    
+    
+}
+
+.fivenumber p{
+    height: 200px;
+}

@@ -530,7 +530,7 @@
 
 // ---------default parameter ------------------
 // function mname(name="BONI"){
-//     console.log("HIII"+" "+ name);
+//     console.log("HIII","",name);
 // } 
 // mname()
 
@@ -551,9 +551,149 @@
 
 // ---------------------------function-------------
 
-let add=function sum(a,b){
-    return a+b;
+// let add=function sum(a,b){
+//     return a+b;
+
+// }
+// sum(12,13)
+//  console.log(add)
+
+// ----------------------------Array--------------
+
+// let num = [1,2,3,4,5];
+// let b = num.toString();
+// let c = num.join(" Hi ");
+// console.log(num,b,c);
+
+// ---push---add last
+// let arr = [1,2,3];
+// arr.push("j");
+// arr.push("h");
+// console.log(arr); //1,2,3,'j', 'h'
+
+// ----pop--- remove from last 
+// let arr = ["HII","NITIN","BONI"];
+// arr.pop();
+// console.log(arr);
+
+//-----shift---remove from start ----shift and upshift down performance due to add or remove element from the start --use less
+// let arr = [1,2,3,4,5,6,7,8,9];
+// arr.shift();
+// console.log(arr) 
+
+// ---unshift-----add start 
+// let arr = [1,2,3,4,5,6,7,8,9];
+// arr.unshift(11);
+// console.log(arr) 
+
+// -------slice----
+// let arr = [1,2,3,4,5,6]
+// arr.slice(1,4)
+// console.log(arr)
+
+
+// ------------------------------------------------test ----------------------------------
+
+// Q9 prints hello World
+// function myFunction(){
+//     console.log("Hello world");
+// }
+// myFunction();
+
+// Q10 Prints your Name
+// function myName(){
+//     console.log("Nitin");
+// }
+// myName()
+
+// let Name = myName();
+
+// Q11 takes no and print it Html
+
+ function submit(){
+        let num = document.getElementById("userNum").value;
+        document.getElementById("Useroutput").innerText = num;
+
+    }
+
+// Q12return sum of 2 number
+function ADD(){
+    let num1 = Number(document.getElementById("userNum1").value);
+    let num2 = Number(document.getElementById("userNum2").value);
+    let result = num1+ num2;
+    document.getElementById("result").innerText = result;
 
 }
-sum(12,13)
- console.log(add)
+
+
+// Q13 square of number
+function Square(){
+   let  num = Number(document.getElementById("sqNum").value);
+   let result = Number(num*num);
+    document.getElementById("sqresult").innerText = result;
+
+}
+
+// Q14 even odd.
+function isEven(){
+    let num = Number(document.getElementById("num").value);
+    let result = num%2 ===0  ? "even" : "odd";
+    document.getElementById("ev-od-result").innerText=result;
+    }
+
+
+// Q15 arrow fn 2numbers
+//  let result = (a,b) => a+b ;
+//  console.log(result(1,2))
+
+// Q16 1 to 10 numbers
+// let pnum = (num) => {
+//     for(i = 1;i<=num;i++)
+//         console.log(i);
+// }
+// pnum(13);
+
+// Q17 array of 5 numbr
+// let arr = [1,2,3,4,5]
+// console.log(arr);
+
+// Q18 print array value using loop
+// let arr =[1,2,3,4,5,6,"HI"];
+// for(let i of arr){
+//     console.log(i);
+// }
+
+// Q19 add new value using push
+// let arr = [1,2,3,4,5,6];
+// arr.push("chilll");
+// console.log(arr);
+
+// Q20 remove last valuing pop()
+// let arr = [11,12,13,14,15,16]
+// arr.pop();
+// console.log(arr);
+
+// Q21 use Map( to double all value
+// let arr = [1,2,3];
+// let result = arr.map(n => n*2);
+// console.log(result);
+
+// Q22 filter( to print even number
+// let arr = [1,2,3,4,5,6,7,8,9,1,2,3,];
+// let result = arr.filter(n => n%2===0);
+// console.log(result);
+
+// Q23 foreach to print all value
+// let arr = [4,5,6,7,8,0];
+// arr.forEach((i) => console.log(i));
+
+// Q24 take 5 number 
+ function fiveNum(){
+    let num = Number(document.getElementById("loopnum").value);
+    let result = "";
+    for(i=1;i<=num;i++){
+        result +=i;
+        document.getElementById("loopresult").innerText = result;
+        console.log(i)
+    }
+ }

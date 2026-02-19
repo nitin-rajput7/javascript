@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <section>
+<div class="printnumber displayflexFull">
+    <!-- -----------button for print number -->
+    <h1>HI</h1>
     
+    <input type="number" id="userNum" placeholder="enter number here">
+    <button onclick="submit()">Submit</button>
+    <p id="Useroutput"></p>
+
+</div>
+</section>
+<section>
+    <!-- ------------------add 2 number  -->
+    <div class="addNum displayflexFull">
+        <h1>Add Two Numbers</h1>
+        
+        <input type="number"id="userNum1" placeholder="1st Number">
+        <input type="number"id="userNum2" placeholder="2nd Number">
+        <button onclick="ADD()">ADD</button>
+        <p id="result"></p>
+
+    </div>
+
+</section>
+<section>
+    <!-- ----------square of  numbers -->
+     <div class="squareNum displayflexFull">
+        <h1>Square</h1>
+
+        <input type="number" id="sqNum" placeholder="Enter Number">
+        <button onclick="Square()">Submit</button>
+        <p id="sqresult"></p>
+
+     </div>
+
+</section>
+<section>
+    <div class="even-odd displayflexFull">
+        <h1>Check No</h1>
+
+        <input type="number" id="num">
+        <button onclick="isEven()">Submit</button>
+        <p id="ev-od-result"></p>
+    </div>
+</section>
+<section>
+    <!-- ---------five number print -->
+    <div class="fivenumber displayflexFull">
+        <h1>Give Number</h1>
+
+        <input type="number" id="loopnum" placeholder="Enter Number">
+        <button onclick="fiveNum()">Submit</button>
+        <p id="loopresult"></p>
+        
+    </div>
+</section>
 </body>
-<script src="script.js"></script>
+
+<script src="script.js">
+  
+</script>
+
 </html>
