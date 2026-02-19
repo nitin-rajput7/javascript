@@ -225,12 +225,6 @@
 
 // -------------------------------------------pattern print---------------------------
 
-// for(i=1;i<=8;i++){
-// for(j=1;j<=i;j++){
-//     document.write("*");
-// }
-// document.write("<br>");
-// }
 
 // ---------------------------Question 1-50------------------
 
@@ -286,12 +280,12 @@
 // console.log(typeof nu)
 
 // q11 to 15
-// let naam = "hello"
-// console.log(typeof "hello")
-// console.log(typeof 100)
-// console.log(typeof true)
-// console.log(typeof undefined)
-// console.log(typeof null)
+// let naam = "hello"//string
+// console.log(typeof "hello")//string
+// console.log(typeof 100)//Number
+// console.log(typeof true)//boolean
+// console.log(typeof undefined)//undefined
+// console.log(typeof null)//object
 
 // q16 to 25
 // console.log(10+5);//15
@@ -359,7 +353,7 @@
 // }
 
 // q32 -- grade system
-// let number = 79;
+// let number = 81;
 // let grade;
 // if(number>=90 && number<=100){
 //     console.log(grade="A")
@@ -394,14 +388,14 @@
 // }
 
 // q35 -- leap year
-let year = 2020;
-if((year%4===0 && year%100 !==0) || (year%400===0)){
-    console.log(year+"this is a leap year");
-}
+// let year = 2020;
+// if((year%4===0 && year%100 !==0) || (year%400===0)){
+//     console.log(year+"this is a leap year");
+// }
 
-else{
-    console.log(year+"not a leap year");
-}
+// else{
+//     console.log(year+"not a leap year");
+// }
 
 
 // no % 400===0 || (no %4===0 && no%100 !==0)
@@ -450,7 +444,7 @@ else{
 // q43 even
 // for (i=1; i<=20;i++){
 //     if(i%2===0){
-//         console.log(i , "even")
+//         console.log(i = "even")
 //     }
     
 // }
@@ -508,3 +502,58 @@ else{
 //     console.log(i)
 // }
 
+// ---------------------------------Function------------
+// function greet(mname){
+//     console.log("HI" ,""+mname);
+// }
+
+// greet("BONI")
+
+// function add(a,b){
+//     // console.log(a+b);
+//     return a+b;
+
+// }
+// let sum = add(5,6)
+// console.log(sum);
+
+
+// function isEven(number){
+//     return number%2===0 ? true : false
+// }
+// console.log(isEven(10));
+
+
+// -----------arrow function=--------------
+// const add = (a,b)=> a+b;
+// console.log(add(3,5))
+
+// ---------default parameter ------------------
+// function mname(name="BONI"){
+//     console.log("HIII"+" "+ name);
+// } 
+// mname()
+
+// -----------------------------array-----------------
+
+// let bikeitems = ["handlebar","mirrors","chain"]
+// bikeitems.push("sproket","engine oil");
+// console.log(bikeitems);
+
+// let str = "NItinghjhgfghjhgfghj";
+// let str2 = str.toUpperCase();
+// const count = [...str2].reduce((acc,alpha) => {
+//     acc[alpha ]=(acc[alpha]|| 0) +1;
+//     return acc;
+// },[])
+// console.log(count)
+
+
+// ---------------------------function-------------
+
+let add=function sum(a,b){
+    return a+b;
+
+}
+sum(12,13)
+ console.log(add)
