@@ -592,7 +592,7 @@
 // console.log(arr)
 
 
-// ------------------------------------------------test ----------------------------------
+// ------------------------------------------------test 19226----------------------------------
 
 // Q9 prints hello World
 // function myFunction(){
@@ -692,8 +692,106 @@ function isEven(){
     let num = Number(document.getElementById("loopnum").value);
     let result = "";
     for(i=1;i<=num;i++){
-        result +=i;
+        result +=i+"\n";
         document.getElementById("loopresult").innerText = result;
-        console.log(i)
+        console.log(i);
     }
  }
+
+//  -------------------------------------------------------array methods---------20226-----------------
+
+// -------forEach method-------forEach(() => {})
+// let arr = [1,2,34,4,];
+// arr.forEach((items) => {console.log(items)});
+
+// -------map() method----------map(()=> )
+// let arr = [1,2,3,4,5,5,5,6];
+// let arr1 = arr.map( (item) => 2);
+// console.log(arr1);
+
+// --------filter method----filter(() => );
+// let arr = ["1","2",12,2,33,4,];
+// let arr2 = arr.filter((item) => typeof item === Number);
+// console.log(arr2);
+
+// ------------find()-------- find(()=>{})
+    // let arr = [1,'blue',"black",2,"blue",2,2,3]
+    // let arr2 = arr.find((item) => item === "blue");
+    // console.log(arr2);
+
+
+// ----------include---------
+// let arr = [1,2,3,4];
+// let arr2 = arr.includes(4);
+// console.log(arr2);
+
+// ----------join-----
+// let arr = [1,2,3,4];
+// let arr2 = arr.join("--");
+// console.log(arr2);
+
+// --------fill-----fill(element,startinx,endidx)
+// let arr = [1,2,3,4,5,6,7,8,9];
+// let arr2 = arr.fill("a",2,6);
+// console.log(arr2);
+
+// -------slice------slice(st,end)
+// let arr = [1,2,3,4,5,6,7,8,99,2];
+// let arr2 = arr.slice(1,5);
+// console.log(arr2);
+
+// -------- splice  ------splice(st,delete,additm)
+// let arr = [1,2,3,4,5,6,7,8,99,2];
+// let arr2 = arr.splice(1,3,"TNT");
+// console.log(arr)
+// console.log(arr2);
+
+// ---------reverse------
+// let arr = [1,2,3,4,5,6,7,8,99,2];
+// let arr2 = arr.reverse();
+// console.log(arr2);
+
+// -----------isArray()-------
+// let arr = [1,2,3,4,5,6,7,8,99,2];
+// let arr2 = Array.isArray(arr);
+// console.log(arr2);
+
+//------------sort Array -----
+// let arr = [1,2,3,4,5,6,4,9,0,1,2,3,4,7,8,99,2];
+// let arr2 = arr.sort();
+// console.log(arr2);
+
+// ----------------------String--------
+// ---------length-----
+// let str = "hi ,how are u";
+// console.log(str.length);
+
+// toUpperCase and toLowerCase
+// let str = "  HElLo BONI HelLO ;> BONI";
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// // trim
+// console.log(str.trim());
+// // include
+// console.log(str.includes("BONI"));
+// // indexof and lastindexof
+// console.log(str.indexOf("o"));
+// console.log(str.lastIndexOf("O"));
+// // slicing
+// console.log(str.slice(4));
+// console.log(str.slice(-6));
+// // substring
+// console.log(str.substring(4))
+// // replace
+// console.log(str.replace("BONI","Boni"));
+// console.log(str.replaceAll("BONI","Boni"));
+// // split
+// console.log(str.split(" "));
+// // startwith and endswith
+// console.log(str.startsWith(" "));
+// console.log(str.endsWith(" "));
+// // charAt and charCodeAt
+// console.log(str.charAt(19));
+// console.log(str.charCodeAt(4));
+// // search
+// console.log(str.indexOf("BONI"));

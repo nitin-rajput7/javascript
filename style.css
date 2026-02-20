@@ -35,7 +35,7 @@ p{
     border: 1px solid black;
     height: 20px;
     width: 90%;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* padding: 8px 12px; */
 }
 .printnumber #userNum{
@@ -45,5 +45,6 @@ p{
 }
 
 .fivenumber p{
-    height: 200px;
+    height: 8vh;
+    overflow: scroll;
 }
