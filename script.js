@@ -706,13 +706,17 @@ function isEven(){
 
 // -------map() method----------map(()=> )
 // let arr = [1,2,3,4,5,5,5,6];
-// let arr1 = arr.map( (item) => 2);
+// let arr1 = arr.map( (item) => 0);
 // console.log(arr1);
 
 // --------filter method----filter(() => );
-// let arr = ["1","2",12,2,33,4,];
-// let arr2 = arr.filter((item) => typeof item === Number);
-// console.log(arr2);
+// let arr = ["11","2","122",12,2,331,4,1,2,3,4,88,132];
+// let arrNUm = arr.filter((item) =>  typeof item ==="number");
+// let arrStr = arr.filter((item) =>  typeof item ==="string");
+// console.log(arrNUm.sort((a,b) => a-b));
+// console.log(arrStr.sort());
+// let result =[...arrStr,...arrNUm];
+// console.log(result);
 
 // ------------find()-------- find(()=>{})
     // let arr = [1,'blue',"black",2,"blue",2,2,3]
@@ -761,7 +765,7 @@ function isEven(){
 // let arr2 = arr.sort();
 // console.log(arr2);
 
-// ----------------------String--------
+// ----------------------String------------------
 // ---------length-----
 // let str = "hi ,how are u";
 // console.log(str.length);
@@ -792,6 +796,86 @@ function isEven(){
 // console.log(str.endsWith(" "));
 // // charAt and charCodeAt
 // console.log(str.charAt(19));
-// console.log(str.charCodeAt(4));
+// console.log(str.charCodeAt(19));
 // // search
 // console.log(str.indexOf("BONI"));
+
+// --------------------
+// let str = "hello world";
+// let arr = str.split(",");
+// console.log( typeof arr,arr);
+
+// let arr1 = ["hi","i","M","Spider"];
+// let str1 = arr1.join(" ");
+// console.log( typeof str1,str1);
+// let str = "javascript";
+// let count = str.length()
+// console.log(count)
+
+// -------------------------------------objects----------
+
+// let obj = {
+//     myName: "Boni",
+//     age:21,
+//     about : {
+//     Planet: "Earth",
+//     Species:"Homo Sapiens",
+//     live:{//nesting
+//         country:"India",
+//         State:"Hr",
+//         location :"GGN"
+//     }
+//     }
+    
+// }
+// console.log(obj.about.Species);//deep accessing
+// let {State,country} = obj.about.live;//destructuring
+// console.log(State);
+// ---for in ---
+// for (let key in obj){
+//     console.log(key,obj[key]);
+// }
+// ---spread--
+// let obj2 = {...obj}
+// console.log(obj2);
+// ----if we have nested obj we should use deeep clone not spread----JSON.stringify()for make obj an string JSON.parse()re obj
+// let obj3 = JSON.parse(JSON.stringify(obj));
+// obj3.about.live.country="hi";
+// console.log(obj)
+// console.log(obj3)
+// ---optional chaining-----no error, show undefined
+// console.log(obj?.about?.live.location?.how);
+
+// QUE-----Destruction the key "first-name" as a variable called first name------
+// let obj = {
+//     "first-name":"nitin",
+
+// };
+// let {"first-name":firstName}= obj;
+// console.log(obj);
+
+// ----Use a variable to dynamically assign a property--
+// const key = "Role";
+// let obj = {
+//     Mname:"nitin",
+//     [key]:"Web dev",
+// }
+// console.log(obj);
+
+
+
+// ------------------alphabets----------
+let count = 0;
+let line = ""
+for (let i=65;i<=90;i++){
+ line += String.fromCharCode(i)+" ";
+    count++;
+    if( count === 5){
+        count = 0;
+        console.log(line)
+        line = ""
+        
+    }
+    
+
+}
