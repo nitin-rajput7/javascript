@@ -866,14 +866,12 @@ function isEven(){
 
 // ------------------alphabets----------
 let count = 0;
-let line = ""
 for (let i=65;i<=90;i++){
- line += String.fromCharCode(i)+" ";
+ process.stdout.write(String.fromCharCode(i)+" ");
     count++;
     if( count === 5){
+        console.log("");
         count = 0;
-        console.log(line)
-        line = ""
         
     }
     
