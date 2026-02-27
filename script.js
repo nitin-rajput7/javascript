@@ -80,7 +80,7 @@
 
 //  let fruits = ("apple,banana,mango");
 //  console.log("typeof fruits is" ,typeof fruits);
- 
+
 // // ------------------------convert string 100----------
 
 // let number = Number("100")
@@ -90,7 +90,7 @@
 
 // console.log("true + 1 is ",true+1)
 
- // --------if else ----------
+// --------if else ----------
 
 // let marks = prompt("enter your marks .....");
 // let grade;
@@ -126,7 +126,6 @@
 //     console.log("not a number")
 // }
 
-
 // ----------------------------max value---------------
 
 // let a = prompt("enter 1st number");
@@ -154,18 +153,17 @@
 // let remove = 6
 // for (let i = 0;i<a.length;i++){
 //     if(a[i]===remove){
-//         a.splice(i,1); 
+//         a.splice(i,1);
 //         console.log(a)
-        
+
 //     }
 // }
 
-// console.log(typeof remove) 
+// console.log(typeof remove)
 
 // for(let i=0;i<a.length;i++){
 //     console.log(a[i])
 // }
-
 
 // ------------------------while loops-------------
 // i=12;
@@ -187,12 +185,12 @@
 // for(let i of str){
 //     console.log("i-",i)
 //     size++;
-    
+
 // }
 // console.log("size of string",size);
 
 // ---------------------for in ------------itrator (object and arrays) ----------
- 
+
 // let obj = {
 //     name: "nitin",
 //     age:20,
@@ -224,7 +222,6 @@
 // }
 
 // -------------------------------------------pattern print---------------------------
-
 
 // ---------------------------Question 1-50------------------
 
@@ -322,8 +319,8 @@
 // }
 
 // q29 largest of 2num
-// let a = 21; 
-// let b = 21; 
+// let a = 21;
+// let b = 21;
 // if(a>b){
 //     console.log("a is greater")
 // }else if(a==b ){
@@ -333,7 +330,7 @@
 // }
 
 //q30 largest of 3num
-// let a = 21; 
+// let a = 21;
 // let b = 2;
 // let c = 20;
 // if(a>b && a>c){
@@ -397,7 +394,6 @@
 //     console.log(year+"not a leap year");
 // }
 
-
 // no % 400===0 || (no %4===0 && no%100 !==0)
 
 // --------------------------ternary operator---------------------
@@ -440,13 +436,12 @@
 //     console.log(i);
 // }
 
-
 // q43 even
 // for (i=1; i<=20;i++){
 //     if(i%2===0){
 //         console.log(i = "even")
 //     }
-    
+
 // }
 
 // q44 odd
@@ -454,7 +449,7 @@
 //     if(i%2!==0){
 //         console.log(i, "odd")
 //     }
-    
+
 // }
 
 // 45-- multip of 5
@@ -477,7 +472,6 @@
 
 // }
 // console.log(sum);
-
 
 // 48
 // let temp = `
@@ -517,12 +511,10 @@
 // let sum = add(5,6)
 // console.log(sum);
 
-
 // function isEven(number){
 //     return number%2===0 ? true : false
 // }
 // console.log(isEven(10));
-
 
 // -----------arrow function=--------------
 // const add = (a,b)=> a+b;
@@ -531,7 +523,7 @@
 // ---------default parameter ------------------
 // function mname(name="BONI"){
 //     console.log("HIII","",name);
-// } 
+// }
 // mname()
 
 // -----------------------------array-----------------
@@ -547,7 +539,6 @@
 //     return acc;
 // },[])
 // console.log(count)
-
 
 // ---------------------------function-------------
 
@@ -571,7 +562,7 @@
 // arr.push("h");
 // console.log(arr); //1,2,3,'j', 'h'
 
-// ----pop--- remove from last 
+// ----pop--- remove from last
 // let arr = ["HII","NITIN","BONI"];
 // arr.pop();
 // console.log(arr);
@@ -579,18 +570,17 @@
 //-----shift---remove from start ----shift and upshift down performance due to add or remove element from the start --use less
 // let arr = [1,2,3,4,5,6,7,8,9];
 // arr.shift();
-// console.log(arr) 
+// console.log(arr)
 
-// ---unshift-----add start 
+// ---unshift-----add start
 // let arr = [1,2,3,4,5,6,7,8,9];
 // arr.unshift(11);
-// console.log(arr) 
+// console.log(arr)
 
 // -------slice----
 // let arr = [1,2,3,4,5,6]
 // arr.slice(1,4)
 // console.log(arr)
-
 
 // ------------------------------------------------test 19226----------------------------------
 
@@ -610,37 +600,32 @@
 
 // Q11 takes no and print it Html
 
- function submit(){
-        let num = document.getElementById("userNum").value;
-        document.getElementById("Useroutput").innerText = num;
-
-    }
-
-// Q12return sum of 2 number
-function ADD(){
-    let num1 = Number(document.getElementById("userNum1").value);
-    let num2 = Number(document.getElementById("userNum2").value);
-    let result = num1+ num2;
-    document.getElementById("result").innerText = result;
-
+function submit() {
+  let num = document.getElementById("userNum").value;
+  document.getElementById("Useroutput").innerText = num;
 }
 
+// Q12return sum of 2 number
+function ADD() {
+  let num1 = Number(document.getElementById("userNum1").value);
+  let num2 = Number(document.getElementById("userNum2").value);
+  let result = num1 + num2;
+  document.getElementById("result").innerText = result;
+}
 
 // Q13 square of number
-function Square(){
-   let  num = Number(document.getElementById("sqNum").value);
-   let result = Number(num*num);
-    document.getElementById("sqresult").innerText = result;
-
+function Square() {
+  let num = Number(document.getElementById("sqNum").value);
+  let result = Number(num * num);
+  document.getElementById("sqresult").innerText = result;
 }
 
 // Q14 even odd.
-function isEven(){
-    let num = Number(document.getElementById("num").value);
-    let result = num%2 ===0  ? "even" : "odd";
-    document.getElementById("ev-od-result").innerText=result;
-    }
-
+function isEven() {
+  let num = Number(document.getElementById("num").value);
+  let result = num % 2 === 0 ? "even" : "odd";
+  document.getElementById("ev-od-result").innerText = result;
+}
 
 // Q15 arrow fn 2numbers
 //  let result = (a,b) => a+b ;
@@ -687,16 +672,16 @@ function isEven(){
 // let arr = [4,5,6,7,8,0];
 // arr.forEach((i) => console.log(i));
 
-// Q24 take 5 number 
- function fiveNum(){
-    let num = Number(document.getElementById("loopnum").value);
-    let result = "";
-    for(i=1;i<=num;i++){
-        result +=i+"\n";
-        document.getElementById("loopresult").innerText = result;
-        console.log(i);
-    }
- }
+// Q24 take 5 number
+function fiveNum() {
+  let num = Number(document.getElementById("loopnum").value);
+  let result = "";
+  for (i = 1; i <= num; i++) {
+    result += i + "\n";
+    document.getElementById("loopresult").innerText = result;
+    console.log(i);
+  }
+}
 
 //  -------------------------------------------------------array methods---------20226-----------------
 
@@ -719,10 +704,9 @@ function isEven(){
 // console.log(result);
 
 // ------------find()-------- find(()=>{})
-    // let arr = [1,'blue',"black",2,"blue",2,2,3]
-    // let arr2 = arr.find((item) => item === "blue");
-    // console.log(arr2);
-
+// let arr = [1,'blue',"black",2,"blue",2,2,3]
+// let arr2 = arr.find((item) => item === "blue");
+// console.log(arr2);
 
 // ----------include---------
 // let arr = [1,2,3,4];
@@ -826,7 +810,7 @@ function isEven(){
 //         location :"GGN"
 //     }
 //     }
-    
+
 // }
 // console.log(obj.about.Species);//deep accessing
 // let {State,country} = obj.about.live;//destructuring
@@ -862,18 +846,225 @@ function isEven(){
 // }
 // console.log(obj);
 
+// ------------------alphabets ----------
+// let count = 0;
+// for (let i=65;i<=90;i++){
+//  process.stdout.write(String.fromCharCode(i)+" ");
+//     count++;
+//     if( count === 5){
+//         console.log("");
+//         count = 0;
 
+//     }
+// }
 
-// ------------------alphabets----------
-let count = 0;
-for (let i=65;i<=90;i++){
- process.stdout.write(String.fromCharCode(i)+" ");
-    count++;
-    if( count === 5){
-        console.log("");
-        count = 0;
-        
+// -----------Alpha--------------
+
+// let count = 0;
+// let line = "";
+// for (let i = 65;i<=90;i++){
+//     line+= String.fromCharCode(i);
+//     count++;
+//     if(count%5===0 || i===90){
+//         console.log(line);
+//         line="";
+//         count=0;
+//     }
+// }
+
+// --------------------------------------------------------star pattern----------------
+
+//      * 0 1 4
+//     *** 1 3 3
+//    ***** 2 5 2
+//   ******* 3 7 1
+//  ********* 4 9 0
+
+// for (let i = 0; i <= 10; i++) {
+//   for (let j = 0; j <= 9 - i; j++) {
+//     document.write("&nbsp;&nbsp;");
+//   }
+//   for (let k = 1; k <= i * 2 + 1; k++) {
+//     document.write("#");
+//   }
+//   document.writeln("<br>");
+// }
+
+// ---
+        //  *
+        //  **
+        //  ***
+        //  *****
+
+for(let i=1;i<=6;i++){
+    for(let j=1;j<=i;j++){
+    document.write("*");
+}
+    document.write("<br>")
+
+ }
+
+ document.write("<br>");
+
+// -----star-----
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+for(let i = 1;i<=5;i++){
+    for(let k=1;k<=5-i;k++){
+        document.write("&nbsp;&nbsp;")
     }
-    
+    for(let j=1;j<=i;j++){
+       document.write("*");
+    }
+    document.write("<br>")
+ 
+}
+ document.write("<br>");
+
+
+// reverse
+
+for(let i=5;i>=1;i--){
+    for(let j=1;j<=i;j++){
+        document.write("*");
+    }
+    document.write("<br>");
 
 }
+ document.write("<br>");
+
+
+// triangle
+
+ for(let i=1;i<=8;i++){
+
+    for(let j=9;j>i;j--){
+    document.write("&nbsp;&nbsp;"); 
+}
+    for(let k=1;k<=((2*i)-1);k++ ){
+    document.write("*")
+}
+    document.write("<br>")
+    
+ }
+//  document.write("<br>");
+// reverse tria
+
+// for (let i=9;i>=1;i--){
+// // sp
+//   for(let k=9;k>i;k--){
+//     document.write("&nbsp;&nbsp;");
+//   }
+//   // str
+//   for(let j=1;j<=((2*i)-1);j++){
+//     document.write("*");
+//   }
+
+
+//   document.write("<br>");
+
+
+// }
+
+
+// triangle revrse
+
+for(let i = 9;i>=1;i--){
+  // sp
+  for(let s=9;s>i;s--) {
+    document.write("&nbsp;&nbsp");
+  }
+  // star
+    for(let j=1;j<=((2*i)-1);j++){
+      document.write("*");
+    }
+  document.write("<br>");
+}
+
+// ------------arr tri------------
+
+for(let i=1;i<=15;i++){
+  // sp
+  for(let k=15;k>i;k--){
+    document.write("&nbsp;&nbsp;")
+  }
+  for(let j=1;j<=i;j++){
+    document.write("*")
+  }
+  document.write("<br>")
+ 
+
+}
+for(let i=1;i<=15;i++){
+  // space
+  for(let k=1;k<=i;k++){
+    document.write("&nbsp;&nbsp")
+  }
+  // star
+  for(let j=14;j>=i;j--){
+    document.write("*")
+  }
+
+  document.write("<br>")
+ 
+  
+}
+// -------------------------
+
+// holo rectangle ------------
+let n = 10;
+for(let i=1;i<=n;i++){
+  for(let j=1;j<=n;j++){
+    if( i ==1 || i==n ||j==n || j==1 || j==i){
+    document.write("*");
+  }
+    else{
+      document.write("&nbsp;&nbsp;");
+    }
+  }
+
+  document.write("<br>");
+  
+
+}
+
+// ================
+
+// plus---------ptrn 
+
+let Val = 10;
+for(let i=1;i<=Val;i++){
+  for(let j=1;j<=Val;j++){
+    if( i==(Val/2) || j==(Val/2)){
+    document.write("* ");
+  }
+    else{
+      document.write("n ");
+    }
+  }
+
+  document.write("<br>");
+  
+
+}
+document.write("<br>");
+
+// diagonal-------
+
+for(let i =1;i<=5;i++){
+  for(let j=1;j<=5;j++){
+    if(i==j || j==i){
+      document.write("+ ");
+    }
+    else{
+      document.write("- ");
+    }
+  }
+  document.write("<br>");
+}
+
